@@ -10,14 +10,14 @@ module.exports = defineConfig({
     headless: false,
     httpCredentials: {
       username: "guest",
-      password: "welcome2qauto"
+      password: "welcome2qauto",
     },
     baseURL: "https://qauto.forstudy.space",
     trace: "on-first-retry",
-    launchOptions:{
-      slowMo: 1000
-  }
-},
+    launchOptions: {
+      // slowMo: 1000
+    },
+  },
 
   projects: [
     {
