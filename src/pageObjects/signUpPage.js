@@ -1,13 +1,15 @@
-class SignUpPage {
+import { BasePage } from "./basePage.js";
+
+class SignUpPage extends BasePage {
   constructor(page) {
-    this.page = page;
+    super(page);
     this.modalSelector = "app-signup-modal";
     this.registerButtonSelector = "div.modal-footer > button";
     this.errorSelector = ".alert.alert-danger";
   }
 
   async openSignUpModal() {
-    await this.page.goto("/");
+    await this.page.goto("");
     await this.page.click("text=Sign Up");
     await this.page.waitForSelector(this.modalSelector);
   }
@@ -21,12 +23,13 @@ class SignUpPage {
 
   async clickRegisterButton() {
     const registerButton = await this.page.locator(this.registerButtonSelector);
-    const isButtonEnabled = await registerButton.isEnabled();
+
+    const isButtonEnabled = !(await this.isLocatorDisabled(registerButton));
+
     if (isButtonEnabled) {
       await registerButton.click();
-    } else {
-      console.warn("Warning: Register button is disabled");
     }
+    await this.expectLocatorToBeDisabled(registerButton);
   }
 
   async waitForUserNavDropdown() {
@@ -35,6 +38,7 @@ class SignUpPage {
 
   async waitForExistingUserError() {
     await this.page.waitForSelector(this.errorSelector);
+    await this.page.click(this.errorSelector);
   }
 
   async getExistingUserErrorText() {
@@ -59,10 +63,13 @@ class SignUpPage {
   }
 
   async isRegisterButtonDisabled() {
-    return await this.page
-      .locator(`${this.registerButtonSelector}[disabled]`)
-      .evaluate((button) => button !== null);
+    const registerButton = await this.page.locator(this.registerButtonSelector);
+    return await registerButton.isDisabled();
+  }
+
+  async expectLocatorToBeDisabled(locator) {
+    const isDisabled = await this.isLocatorDisabled(locator);
   }
 }
 
-export default SignUpPage;
+export { SignUpPage };
