@@ -1,5 +1,4 @@
 import { expect, test } from "@playwright/test";
-
 // Function to generate random email (tried to do it via faker but didn't succeed, so googled this solution)
 const generateRandomString = () => Math.random().toString(36).substring(7);
 // Positive scenario
@@ -29,7 +28,7 @@ test("Sign up a new user", async ({ page }) => {
 });
 
 // Negative scenarios
-test("Sign up an existing user", async ({ page }) => {
+test("Sign up an existing user @regression", async ({ page }) => {
   await page.goto("/");
   await page.click("text=Sign Up");
 
