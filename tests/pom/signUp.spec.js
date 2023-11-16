@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 import { SignUpPage } from "../../src/pageObjects/signUpPage.js";
 import { generateRandomString } from "../../src/helpers/utils.js";
 
-test.describe("SignUp Tests", () => {
+test.describe("SignUp Tests @smoke", () => {
   const commonSignUpSteps = async (signUpPage, signupData) => {
     await signUpPage.openSignUpModal();
     await signUpPage.signUpUser(signupData);
