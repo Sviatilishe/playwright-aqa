@@ -1,3 +1,4 @@
+// C:\Autotests\playwright-aqa\playwright.config.cjs
 const { defineConfig, devices } = require("@playwright/test");
 const dotenv = require("dotenv");
 dotenv.config();
