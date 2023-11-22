@@ -137,7 +137,6 @@ test.describe("Auth", () => {
   test.describe("Successful registration", () => {
     test("should register new user", async () => {
       await signUpPopup.registerNewUser(baseSignUpData);
-      // Todo check name in profile
     });
   });
 });

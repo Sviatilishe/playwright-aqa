@@ -1,5 +1,3 @@
-//C:\Autotests\playwright-aqa\src\pageObjects\welcomePage\WelcomePage.js
-
 import BasePage from "../BasePage.js";
 import { expect } from "@playwright/test";
 import GaragePage from "../panel/garagePage/GaragePage.js";
@@ -16,5 +14,4 @@ export default class WelcomePage extends BasePage {
     return new SignUpPopup(this._page);
   }
 
-  //     async loginAsGuest()
 }
