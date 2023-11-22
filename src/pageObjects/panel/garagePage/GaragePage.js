@@ -1,5 +1,3 @@
-//C:\Autotests\playwright-aqa\src\pageObjects\panel\garagePage.js\GaragePage.js
-
 import BasePage from "../../BasePage.js";
 
 export default class GaragePage extends BasePage {
