@@ -1,5 +1,3 @@
-// C:\Autotests\playwright-aqa\tests\auth\signUp\signUp.spec.js
-
 import { expect, test } from "@playwright/test";
 import WelcomePage from "../../../src/pageObjects/welcomePage/WelcomePage.js";
 import StringUtils from "../../../src/Utils/StringUtils.js";
