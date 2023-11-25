@@ -9,7 +9,7 @@ export default class SignInPopup extends BaseComponent {
     super(page, page.locator("app-signin-modal"));
     this.emailInput = this._container.locator(this._emailInputSelector);
     this.passwordInput = this._container.locator(this._passwordInputSelector);
-    this.signInButton = this._container.locator('.btn-primary');
+    this.signInButton = this._container.locator(".btn-primary");
   }
 
   async fill(signInData) {

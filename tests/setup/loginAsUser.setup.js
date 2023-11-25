@@ -4,8 +4,6 @@ import { USERS } from "../../src/data/dict/users.js";
 import WelcomePage from "../../src/pageObjects/welcomePage/WelcomePage.js";
 import { STORAGE_STATE_USER_PATH } from "../../src/data/storageState.js";
 
-
-
 test("should login as user and save storage state", async ({
   page,
   context,
