@@ -18,8 +18,8 @@ export default class SignUpPopup extends BaseComponent {
     this.rePasswordInput = this._container.locator(
       this._rePasswordInputSelector,
     );
-    this.footerButton = this._container.locator("div.modal-footer");
     this.signUpButton = this._container.locator(".btn-primary");
+
     this.nameInputError = this._container.locator(
       `${this._nameInputSelector} + ${this._errorMessageSelector}`,
     );
@@ -45,7 +45,6 @@ export default class SignUpPopup extends BaseComponent {
     await this.emailInput.fill(signUpData.email);
     await this.passwordInput.fill(signUpData.password);
     await this.rePasswordInput.fill(signUpData.rePassword);
-    await this.footerButton.click();
   }
 
   async registerNewUser(signUpData) {

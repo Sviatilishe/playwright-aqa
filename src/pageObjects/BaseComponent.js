@@ -3,7 +3,9 @@ export default class BaseComponent {
     this._page = page;
     this._container = container;
   }
-
+  get page() {
+    return this._page;
+  }
   async waitLoaded() {
     await this._container.waitFor();
   }

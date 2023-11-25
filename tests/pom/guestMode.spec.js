@@ -1,5 +1,5 @@
 import { expect } from "@playwright/test";
-import { test } from "../../src/fixtures/UserGaragePage.fixture.js";
+import { test } from "../../src/fixtures/userGaragePage.fixture.js";
 import WelcomePage from "../../src/pageObjects/welcomePage/WelcomePage.js";
 
 test.describe("Guest mode", () => {
@@ -32,6 +32,7 @@ test.describe("Guest mode", () => {
   test("should contain all required links in header", async ({
     headerLinks,
   }) => {
+    console.log(headerLinks);
     const linksText = await garagePage.header.getLinksText();
     expect(linksText, "All required links should be present").toEqual(
       headerLinks,

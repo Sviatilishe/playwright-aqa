@@ -3,11 +3,12 @@ import { expect } from "@playwright/test";
 import GaragePage from "../panel/garagePage/GaragePage.js";
 import SignUpPopup from "./components/SignUpPopup.js";
 import SignInPopup from "./components/SignInPopup.js";
+
 export default class WelcomePage extends BasePage {
   constructor(page) {
     super(page, "/", page.locator("button", { hasText: "Guest log in" }));
     this.signUpButton = page.locator(".btn-primary");
-    this.signInButton = page.locator(".btn-outline-white.header_signin");
+    this.signInButton = page.locator(".header_signin");
   }
 
   async openSignUpPopup() {
