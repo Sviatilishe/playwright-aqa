@@ -15,6 +15,7 @@ module.exports = defineConfig({
       password: process.env.HTTP_CREDENTIALS_PASSWORD,
     },
     baseURL: process.env.BASE_URL,
+    apiURL: process.env.API_URL,
     trace: "on-first-retry",
     launchOptions: {
       // slowMo: 1000

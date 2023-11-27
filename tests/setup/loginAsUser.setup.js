@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { config } from "../../config/config.js";
+import { config } from "../../playwright.config.cjs";
 import { USERS } from "../../src/data/dict/users.js";
 import WelcomePage from "../../src/pageObjects/welcomePage/WelcomePage.js";
 import { STORAGE_STATE_USER_PATH } from "../../src/data/storageState.js";
