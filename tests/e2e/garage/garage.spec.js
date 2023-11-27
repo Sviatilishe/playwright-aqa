@@ -11,7 +11,6 @@ test.describe("Guest mode", () => {
     await page.route("/api/cars/brands", (route) => route.abort());
 
     await userGaragePage.addCarBtn.click();
-    // todo check if inputs is disabled
   });
 
   test("frontend should use brands returned in response", async ({
@@ -28,6 +27,5 @@ test.describe("Guest mode", () => {
     });
 
     await userGaragePage.addCarBtn.click();
-    // todo check if custom values are set in dropdowns
   });
 });
