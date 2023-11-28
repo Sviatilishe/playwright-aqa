@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { config } from "../../config/config.js";
+import { config } from "../../playwright.config.cjs";
 import { USERS } from "../../src/data/dict/users.js";
 
 async function createUser(data) {
