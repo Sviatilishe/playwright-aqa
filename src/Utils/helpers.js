@@ -3,3 +3,8 @@ function generateRandomEmail() {
   return `itsallgoodman+${randomString}@dispostable.com`;
 }
 export { generateRandomEmail };
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * 1000);
+}
+export { getRandomNumber };
