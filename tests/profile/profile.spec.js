@@ -1,6 +1,6 @@
-import { test } from "../../src/fixtures/userGaragePage.fixture.js";
+import { test } from "../../src/fixtures/UserGaragePage.fixture.js";
 import { expect } from "@playwright/test";
-import ProfilePage from "../../src/pageObjects/profilePage/profilePage.js";
+// import ProfilePage from "../../src/pageObjects/profilePage/profilePage.js";
 import GaragePage from "../../src/pageObjects/panel/garagePage/GaragePage.js";
 
 test.describe("User profile", () => {

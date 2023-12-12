@@ -1,4 +1,4 @@
-import { test } from "../../../src/fixtures/userGaragePage.fixture.js";
+import { test } from "../../../src/fixtures/UserGaragePage.fixture.js";
 import { CUSTOM_BRANDS_RESPONSE_BODY } from "./fixtures/brands.js";
 import { CUSTOM_MODELS_RESPONSE_BODY } from "./fixtures/models.js";
 

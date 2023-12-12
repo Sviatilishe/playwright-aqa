@@ -1,5 +1,5 @@
 import { test as base, request } from "@playwright/test";
-import ProfilePage from "../../src/pageObjects/profilePage/profilePage.js";
+import ProfilePage from "../../src/pageObjects/profilePage/ProfilePage.js";
 import WelcomePage from "../pageObjects/welcomePage/WelcomePage.js";
 import { USERS } from "../data/dict/users.js";
 import { STORAGE_STATE_USER_PATH } from "../data/storageState.js";
