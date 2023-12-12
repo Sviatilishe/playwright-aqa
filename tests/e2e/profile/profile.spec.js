@@ -1,4 +1,4 @@
-import { test } from "../../../src/fixtures/userGaragePage.fixture.js";
+import { test } from "../../../src/fixtures/UserGaragePage.fixture.js";
 import { USER_RESPONSE_BODY } from "../profile/fixtures/profileResponse.js";
 
 test("profile page should display changed user name", async ({

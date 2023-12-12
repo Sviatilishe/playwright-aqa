@@ -1,7 +1,7 @@
 import axios from "axios";
 import { wrapper } from "axios-cookiejar-support";
 import { CookieJar } from "tough-cookie";
-import { test } from "../../src/fixtures/userGaragePage.fixture.js";
+import { test } from "../../src/fixtures/UserGaragePage.fixture.js";
 import { expect } from "@playwright/test";
 import { VALID_BRANDS_RESPONSE_BODY } from "../../src/data/dict/brands.js";
 import { VALID_BRAND_MODELS } from "../../src/data/dict/models.js";
