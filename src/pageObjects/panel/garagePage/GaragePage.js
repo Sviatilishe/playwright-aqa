@@ -1,4 +1,4 @@
-import BasePage from "../../BasePage";
+import BasePage from "../../../../src/pageObjects/BasePage.js";
 
 export default class GaragePage extends BasePage {
   constructor(page) {
