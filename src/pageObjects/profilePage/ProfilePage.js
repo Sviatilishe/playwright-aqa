@@ -1,4 +1,4 @@
-import BasePage from "../BasePage.js";
+import BasePage from "../../../src/pageObjects/BasePage.js"  
 
 export default class ProfilePage extends BasePage {
   constructor(page) {
